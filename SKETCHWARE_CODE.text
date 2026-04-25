@@ -38,3 +38,15 @@ else {
 }
 long lastAdTime = 0;
 long cooldownMs = 1800000; // 30 minutes
+   long currentTime = System.currentTimeMillis();
+   if (currentTime - lastAdTime < cooldownMs) {
+       long minutesLeft = (cooldownMs - (currentTime - lastAdTime)) / 60000;
+       SketchwareUtil.showMessage("Pyramid recharging... " + minutesLeft + " min left");
+   } else {
+       if (UnityAds.isReady("Rewarded_Android")) {
+           UnityAds.show(this, "Rewarded_Android");
+           lastAdTime = currentTime;
+       } else {
+           SketchwareUtil.showMessage("Ad loading... try again in 10s");
+       }
+   }
