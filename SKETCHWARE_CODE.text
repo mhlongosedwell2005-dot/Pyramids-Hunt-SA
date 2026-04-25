@@ -1,0 +1,7 @@
+if (lat > -23.961 && lat < -23.959 && lon > 30.863 && lon < 30.865) { // Taxi Rank
+    SketchwareUtil.showMessage("Pyramid at Taxi Rank!")
+} 
+else if (lat > -23.948 && lat < -23.946 && lon > 30.852 && lon < 30.854) { // Mall
+    SketchwareUtil.showMessage("Pyramid at Mall!")
+}
+// + 3 more spots
