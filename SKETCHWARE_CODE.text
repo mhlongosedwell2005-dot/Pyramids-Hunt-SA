@@ -36,3 +36,5 @@ else if (lat > -23.9405 && lat < -23.9385 && lon > 30.8485 && lon < 30.8505) {
 else {
     button_scan.setVisibility(View.GONE);
 }
+long lastAdTime = 0;
+long cooldownMs = 1800000; // 30 minutes
