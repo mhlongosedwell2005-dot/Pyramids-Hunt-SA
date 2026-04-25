@@ -5,3 +5,34 @@ else if (lat > -23.948 && lat < -23.946 && lon > 30.852 && lon < 30.854) { // Ma
     SketchwareUtil.showMessage("Pyramid at Mall!")
 }
 // + 3 more spots
+double lat = location.getLatitude();
+double lon = location.getLongitude();
+
+// 1. NAMAKGALE TAXI RANK
+if (lat > -23.9615 && lat < -23.9595 && lon > 30.8635 && lon < 30.8655) {
+    button_scan.setVisibility(View.VISIBLE);
+    SketchwareUtil.showMessage("Pyramid at Taxi Rank! Tap SCAN");
+} 
+// 2. NAMAKGALE MALL
+else if (lat > -23.9485 && lat < -23.9465 && lon > 30.8525 && lon < 30.8545) {
+    button_scan.setVisibility(View.VISIBLE);
+    SketchwareUtil.showMessage("Pyramid at Mall! Tap SCAN");
+}
+// 3. LEPATO PARK
+else if (lat > -23.9555 && lat < -23.9535 && lon > 30.8585 && lon < 30.8605) {
+    button_scan.setVisibility(View.VISIBLE);
+    SketchwareUtil.showMessage("Pyramid at Lepato Park! Tap SCAN");
+}
+// 4. NAMAKGALE STADIUM  
+else if (lat > -23.9525 && lat < -23.9505 && lon > 30.8565 && lon < 30.8585) {
+    button_scan.setVisibility(View.VISIBLE);
+    SketchwareUtil.showMessage("Pyramid at Stadium! Tap SCAN");
+}
+// 5. PHALABORWA GATE AREA
+else if (lat > -23.9405 && lat < -23.9385 && lon > 30.8485 && lon < 30.8505) {
+    button_scan.setVisibility(View.VISIBLE);
+    SketchwareUtil.showMessage("Pyramid near Phalaborwa Gate! Tap SCAN");
+}
+else {
+    button_scan.setVisibility(View.GONE);
+}
